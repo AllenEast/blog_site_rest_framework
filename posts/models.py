@@ -14,7 +14,7 @@ from markdown_deux import markdown
 from comments.models import Comment
 
 from .utils import get_read_time
-
+from ckeditor_uploader.fields import RichTextUploadingField
 
 # Create your models here.
 # MVC MODEL VIEW CONTROLLER
@@ -67,7 +67,7 @@ class Post(models.Model):
                               height_field="height_field")
     height_field = models.IntegerField(default=0)
     width_field = models.IntegerField(default=0)
-    content = models.TextField()
+    content = RichTextUploadingField()
     draft = models.BooleanField(default=False)
     publish = models.DateField(auto_now=False, auto_now_add=False)
     read_time = models.IntegerField(default=0)  # models.TimeField(null=True, blank=True) #assume minutes
