@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![Advancing the Blog Logo](https://cfe-static.s3.amazonaws.com/media/advancing-blog/images/advancing_the_blog_cfe.png)
 
 # Advancing the Blog
@@ -62,3 +63,6 @@ Advancing the Blog is an extended look at building a modern blog with the Django
 
 
 
+=======
+# blog_site_rest_framework
+>>>>>>> 17359a886e88e799e83cb900021af6f5a3d5cf49
