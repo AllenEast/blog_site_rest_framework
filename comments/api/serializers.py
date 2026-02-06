@@ -15,11 +15,9 @@ def create_comment_serializer(model_type='post', slug=None, parent_id=None, user
     class CommentCreateSerializer(ModelSerializer):
         class Meta:
             model = Comment
-            fields = [
-                "id",
-                "content",
-                "timestamp"
-            ]
+            fields = ["id", "content", "timestamp"]
+            ref_name = f"CommentCreate_{model_type}"
+
         def __init__(self, *args, **kwargs):
             self.model_type = model_type
             self.slug = slug
